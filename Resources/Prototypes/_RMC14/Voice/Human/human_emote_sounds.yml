@@ -6,9 +6,6 @@
       collection: CMMaleScreams
     Laugh:
       collection: MaleLaugh
-    # RuMC Warcry
-    Warcry:
-      collection: RuMCMaleWarcry
 
 - type: emoteSounds
   parent: RMCBaseFemaleSounds
@@ -18,6 +15,3 @@
       collection: CMFemaleScreams
     Laugh:
       collection: FemaleLaugh
-    # RuMC Warcry
-    Warcry:
-      collection: RuMCFemaleWarcry
