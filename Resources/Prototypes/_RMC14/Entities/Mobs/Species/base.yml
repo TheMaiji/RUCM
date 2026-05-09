@@ -376,6 +376,10 @@
     whitelist:
       components:
       - Xeno
+  - type: HiddenAppearance
+    whitelist:
+      components:
+      - Xeno
   - type: RMCHealthIcons
   - type: RMCMesonsNonviewable
     xenoVisible: true
@@ -390,3 +394,5 @@
     hideLayersOnEquip:
     - UndergarmentTop
     - Hair
+  - type: TTS # TTS RuCM
+    faction: Human

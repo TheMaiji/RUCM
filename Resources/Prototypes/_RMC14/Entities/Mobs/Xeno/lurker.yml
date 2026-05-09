@@ -1,20 +1,23 @@
 - type: entity
   abstract: true
   parent:
-  - CMXenoDeveloped
-  - CMXenoFlammable
-  - RMCXenoSpeechSounds
-  - RMCXenoCommendationReceiver
-  - RMCXenoMobCollision
-  - RMCXenoVentCrawler
+    - CMXenoDeveloped
+    - CMXenoFlammable
+    - RMCXenoSpeechSounds
+    - RMCXenoCommendationReceiver
+    - RMCXenoMobCollision
+    - RMCXenoVentCrawler
   id: RMCXenoLurkerBase
-  name: Lurker
-  description: A beefy, fast alien with sharp claws.
+  name: Охотник
+  description: Мускулистый, быстрый инопланетянин с острыми когтями.
   components:
+  - type: TTS
+    voice: KEEPER_OF_THE_LIGHT_DOTA_2
+    faction: Xeno
   - type: GhostRole
     name: cm-job-name-xeno-lurker
   - type: Sprite
-    sprite: _AU14/Mobs/Xenos/Lurker/lurker.rsi # AU14-Edit
+    sprite: _RMC14/Mobs/Xenonids/Lurker/lurker.rsi
   - type: MobState
     allowedStates:
     - Alive
@@ -103,8 +106,8 @@
 
 - type: entity
   parent:
-  - CMXenoTail
-  - RMCXenoLurkerBase
+    - CMXenoTail
+    - RMCXenoLurkerBase
   id: CMXenoLurker
   suffix: Base
   components:
@@ -145,7 +148,7 @@
     guides:
     - RMCGuideRoleVampire
   - type: Sprite
-    sprite: _AU14/Mobs/Xenos/Lurker/vampire_lurker.rsi # AU14-Edit
+    sprite: _RMC14/Mobs/Xenonids/Lurker/vampire_lurker.rsi
   - type: Xeno
     role: CMXenoLurker
     actionIds:

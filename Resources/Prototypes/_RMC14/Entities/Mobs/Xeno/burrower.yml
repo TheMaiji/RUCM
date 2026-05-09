@@ -8,9 +8,12 @@
   - RMCXenoMobCollision
   - RMCXenoVentCrawler
   id: CMXenoBurrower
-  name: Burrower
-  description: A beefy alien with sharp claws.
+  name: Бурильщик
+  description: Мускулистый ксенос с острыми когтями.
   components:
+  - type: TTS
+    voice: WITCH_DOCTOR_DOTA_2
+    faction: Xeno
   - type: CanBuildThickFromConstructNode
   - type: GuideHelp
     guides:
@@ -18,7 +21,7 @@
   - type: GhostRole
     name: cm-job-name-xeno-burrower
   - type: Sprite
-    sprite: _AU14/Mobs/Xenos/Burrower/burrower.rsi # AU14-Edit
+    sprite: _RMC14/Mobs/Xenonids/Burrower/burrower.rsi
   - type: MobState
     allowedStates:
     - Alive

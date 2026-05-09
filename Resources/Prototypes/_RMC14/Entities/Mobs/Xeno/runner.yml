@@ -1,21 +1,24 @@
 - type: entity
   abstract: true
   parent:
-  - CMXenoDeveloped
-  - CMXenoTail
-  - CMXenoFlammable
-  - RMCXenoSpeechSounds
-  - RMCXenoCommendationReceiver
-  - RMCXenoMobCollision
-  - RMCXenoVentCrawler
+    - CMXenoDeveloped
+    - CMXenoTail
+    - CMXenoFlammable
+    - RMCXenoSpeechSounds
+    - RMCXenoCommendationReceiver
+    - RMCXenoMobCollision
+    - RMCXenoVentCrawler
   id: CMXenoRunnerBase
-  name: Runner
-  description: A small red alien that looks like it could run fairly quickly...
+  name: Бегун
+  description: Маленький красный инопланетянин, который, судя по всему, может бегать довольно быстро...
   components:
+  - type: TTS
+    voice: GYROCOPTER_DOTA_2
+    faction: Xeno
   - type: GhostRole
     name: cm-job-name-xeno-runner
   - type: Sprite
-    sprite: _AU14/Mobs/Xenos/Runner/runner.rsi # AU14-Edit
+    sprite: _RMC14/Mobs/Xenonids/Runner/runner.rsi
   - type: Eye
     pvsScale: 1.5
   - type: MobState
@@ -171,7 +174,7 @@
   suffix: Acider
   components:
   - type: Sprite
-    sprite: _AU14/Mobs/Xenos/Runner/acider_runner.rsi # AU14-Edit
+    sprite: _RMC14/Mobs/Xenonids/Runner/acider_runner.rsi
     layers:
     - map: [ "enum.XenoVisualLayers.Base", "enum.ForTheHiveVisualLayers.Base" ]
       state: alive
@@ -233,8 +236,8 @@
           Heat: 1
       duration: 20
   - type: ForTheHive
-    baseSprite: _AU14/Mobs/Xenos/Runner/acider_runner.rsi # AU14-Edit
-    activeSprite: _AU14/Mobs/Xenos/Runner/acider_runner_primed.rsi # AU14-Edit
+    baseSprite: _RMC14/Mobs/Xenonids/Runner/acider_runner.rsi
+    activeSprite: _RMC14/Mobs/Xenonids/Runner/acider_runner_primed.rsi
     baseDamage:
       types:
         Heat: 1

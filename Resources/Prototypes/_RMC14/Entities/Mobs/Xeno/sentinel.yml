@@ -1,23 +1,26 @@
 - type: entity
   parent:
-  - CMXenoDeveloped
-  - CMXenoTail
-  - CMXenoFlammable
-  - RMCXenoSpeechSounds
-  - RMCXenoCommendationReceiver
-  - RMCXenoMobCollision
-  - RMCXenoVentCrawler
+    - CMXenoDeveloped
+    - CMXenoTail
+    - CMXenoFlammable
+    - RMCXenoSpeechSounds
+    - RMCXenoCommendationReceiver
+    - RMCXenoMobCollision
+    - RMCXenoVentCrawler
   id: CMXenoSentinel
-  name: Sentinel
-  description: A slithery, spitting kind of alien.
+  name: Страж
+  description: Скользкий, плюющийся пришелец.
   components:
+  - type: TTS
+    voice: BOUNTY_HUNTER_DOTA_2
+    faction: Xeno
   - type: GuideHelp
     guides:
     - RMCGuideRoleSentinel
   - type: GhostRole
     name: cm-job-name-xeno-sentinel
   - type: Sprite
-    sprite: _AU14/Mobs/Xenos/Sentinel/sentinel.rsi # AU14-Edit
+    sprite: _RMC14/Mobs/Xenonids/Sentinel/sentinel.rsi
   - type: MobState
     allowedStates:
     - Alive

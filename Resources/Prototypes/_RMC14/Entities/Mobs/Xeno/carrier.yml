@@ -11,6 +11,9 @@
   description: A strange-looking alien creature. It carries a number of scuttling jointed crablike creatures.
   abstract: true
   components:
+  - type: TTS
+    voice: KHAJIIT
+    faction: Xeno
   - type: CanBuildThickFromConstructNode
   - type: GhostRole
     name: cm-job-name-xeno-carrier
@@ -115,7 +118,7 @@
     guides:
     - RMCGuideRoleCarrier
   - type: Sprite
-    sprite: _AU14/Mobs/Xenos/Carrier/carrier.rsi # AU14-Edit
+    sprite: _RMC14/Mobs/Xenonids/Carrier/carrier.rsi
     layers:
     - map: [ "enum.XenoVisualLayers.Base" ]
       state: alive
@@ -164,7 +167,7 @@
     guides:
     - RMCGuideRoleEggsac
   - type: Sprite
-    sprite: _AU14/Mobs/Xenos/Carrier/eggsac_carrier.rsi # AU14-Edit
+    sprite: _RMC14/Mobs/Xenonids/Carrier/eggsac_carrier.rsi
     layers:
     - map: [ "enum.XenoVisualLayers.Base" ]
       state: alive
@@ -208,4 +211,3 @@
   - type: XenoHidden
   - type: RMCActionOrder
     id: RMCXenoCarrierEggsac
-

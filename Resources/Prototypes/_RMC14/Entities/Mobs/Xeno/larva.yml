@@ -1,18 +1,21 @@
 - type: entity
   parent:
-  - CMXenoUndeveloped
-  - CMXenoFlammable
-  - RMCXenoVentCrawler
+    - CMXenoUndeveloped
+    - CMXenoFlammable
+    - RMCXenoVentCrawler
   id: CMXenoLarva
-  name: Larva
+  name: Личинка
   components:
+  - type: TTS
+    voice: SOPHRONIA_FRANKLIN
+    faction: Xeno
   - type: GuideHelp
     guides:
     - RMCGuideRoleDrone
   - type: GhostRole
     name: cm-job-name-xeno-larva
   - type: Sprite
-    sprite: _AU14/Mobs/Xenos/Larva/larva.rsi # AU14-Edit
+    sprite: _RMC14/Mobs/Xenonids/Larva/larva.rsi
   - type: MobState
     allowedStates:
     - Alive
@@ -113,6 +116,6 @@
   description: All slimy and yucky.
   components:
     - type: Sprite
-      sprite: _AU14/Mobs/Xenos/Larva/larva.rsi # AU14-Edit
+      sprite: _RMC14/Mobs/Xenonids/Larva/larva.rsi
       noRot: true
       state: embryo
