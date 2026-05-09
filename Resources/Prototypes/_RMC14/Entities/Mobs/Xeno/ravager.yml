@@ -1,23 +1,26 @@
 - type: entity
   parent:
-  - CMXenoDeveloped
-  - CMXenoTail
-  - CMXenoFlammable
-  - RMCXenoSpeechSounds
-  - RMCXenoCommendationReceiver
-  - RMCXenoMobCollision
+    - CMXenoDeveloped
+    - CMXenoTail
+    - CMXenoFlammable
+    - RMCXenoSpeechSounds
+    - RMCXenoCommendationReceiver
+    - RMCXenoMobCollision
   id: RMCXenoRavagerBase
-  name: Ravager
-  description: A huge, nasty red alien with enormous scythed claws.
+  name: Разрушитель
+  description: Огромный, отвратительный красный пришелец с огромными острыми когтями.
   abstract: true
   components:
+  - type: TTS
+    voice: DRAGON_KNIGHT_DRAGON_DOTA_2
+    faction: Xeno
   - type: GuideHelp
     guides:
     - RMCGuideRoleRavager
   - type: GhostRole
     name: cm-job-name-xeno-ravager
   - type: Sprite
-    sprite: _AU14/Mobs/Xenos/Ravager/ravager.rsi # AU14-Edit
+    sprite: _RMC14/Mobs/Xenonids/Ravager/ravager.rsi
     layers:
     - map: [ "enum.XenoVisualLayers.Base", "enum.XenoShardVisualLayers.Base" ]
       state: alive
@@ -184,7 +187,7 @@
   suffix: Berserker
   components:
   - type: Sprite
-    sprite: _AU14/Mobs/Xenos/Ravager/berserker_ravager.rsi
+    sprite: _RMC14/Mobs/Xenonids/Ravager/berserker_ravager.rsi
   - type: Xeno
     actionIds:
     - ActionXenoRest
@@ -257,10 +260,7 @@
   suffix: Hedgehog
   components:
   - type: Sprite
-    sprite: _AU14/Mobs/Xenos/Ravager/hedgehog_ravager.rsi
-    # layers:
-    # - state: hedgehog_1
-    #   map: [ "enum.XenoShardVisualLayers.Base" ]
+    sprite: _RMC14/Mobs/Xenonids/Ravager/hedgehog_ravager.rsi
   - type: Xeno
     actionIds:
     - ActionXenoRest
@@ -331,5 +331,3 @@
   - type: XenoHidden
   - type: RMCActionOrder
     id: RMCXenoRavagerHedgehog
-
-

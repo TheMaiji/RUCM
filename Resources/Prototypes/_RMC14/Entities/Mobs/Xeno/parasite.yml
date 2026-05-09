@@ -1,12 +1,15 @@
 - type: entity
   abstract: true
   parent:
-  - CMXenoUndeveloped
-  - CMXenoFlammable
-  - RMCXenoVentCrawler
+    - CMXenoUndeveloped
+    - CMXenoFlammable
+    - RMCXenoVentCrawler
   id: CMXenoParasiteBase
-  name: Facehugger
+  name: Лицехват
   components:
+  - type: TTS
+    voice: SHEOGORATH
+    faction: Xeno
   - type: GuideHelp
     guides:
     - RMCGuideRoleParasite
@@ -16,7 +19,7 @@
     raffle:
       settings: parasiteTimeRequirement
   - type: Sprite
-    sprite: _AU14/Mobs/Xenos/Parasite/parasite.rsi # AU14-Edit
+    sprite: _RMC14/Mobs/Xenonids/Parasite/parasite.rsi
   - type: MobState
     allowedStates:
     - Alive
@@ -97,7 +100,7 @@
   - type: Clothing
     quickEquip: false
     slots: [mask]
-    sprite: _AU14/Mobs/Xenos/Parasite/parasite.rsi # AU14-Edit
+    sprite: _RMC14/Mobs/Xenonids/Parasite/parasite.rsi
   - type: HideLayerClothing
     slots:
     - Snout
